@@ -71,6 +71,18 @@ p {
   letter-spacing: 0.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.section-title{
+  font-size: 4rem;
+  font-weight: 300;
+  color: #0f1318;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.section-title span{
+  color: crimson;
+}
 
 /* Header Section starts here */
 #header {
@@ -389,6 +401,76 @@ color: aliceblue;
 transform: scale(1.1);
 }
 
+#contact .contact{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+#contact .contact-items{
+  width: 100%;
+}
+#contact .contact-item{
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #212121;
+ transition: 1s ease box-shadow;
+ /* transition-property: ; */
+}
+#contact .contact-item:hover{
+  box-shadow: 0px 0px 5px 0 #212121;
+}
+#contact .icon{
+  width: 70px;
+  margin: 0 auto;
+  height: 70px;
+  margin-bottom: 10px;
+}
+#contact .contact-info h1{
+  font-size: 2.5rem;
+ font-weight: 500;
+ margin: 5px;
+ 
+}
+#contact .contact-info h2{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+/* End of contact section */
+/* Start of footer section */
+#footer{
+  background-color: #0f2848;
+}
+#footer .footer{
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#footer h2{
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#footer .social-icon{
+  display: flex;
+  width :50%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
   /* my keyframes */
 @keyframes text_reveal_box {
   50% {
@@ -453,11 +535,13 @@ height: 100%;
 }
 
 #about .col-left {
-  width: 250px;
-  height: 360px;
+  width: 600px;
+  height: 400px;
+  padding-left: 60px;
 }
 #about .col-right {
   width: 100%;
+
 }
 
 #about .col-right h2 {
@@ -467,6 +551,7 @@ height: 100%;
   margin-bottom: 10px;
 }
 
+}
 #about .col-right p {
   margin-bottom: 20px;
 }
@@ -495,7 +580,43 @@ height: 100%;
   width: 98%;
   z-index: -1;
 }
+/* end od about section */
 
+
+/* start of contact section */
+#contact .contact{
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 20vh;
+}
+#contact .contact-items{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px;
+  margin-top: 50px;
+}
+#contact .contact-item{
+  width: 30%;
+  margin: 0;
+
+}
+#contact .contact-item .icon{
+  height: 80px;
+  width: 80px;
+}
+#contact .contact-item .icon img{
+  object-fit: contain;
+
+}
+#contact .contact-item .contact-info{
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
 
 /* For desktop */
 @media only screen and (min-width: 1200px) {
